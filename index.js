@@ -1,1 +1,1 @@
-export {default as colorbar} from "./src/colorbar";
+export {colorbarV, colorbarH } from "./src/colorbar";

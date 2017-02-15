@@ -1,7 +1,8 @@
 var tape = require("tape"),
-    foo = require("../");
+    colorbar = require("../");
 
-tape("foo() returns the answer to the ultimate question of life, the universe, and everything.", function(test) {
-  test.equal(foo.colorbar(), 42);
-  test.end();
+tape("colorbarV() is called with the correct scale", function(test) {
+    // var cb = colorbar.colorbarV(d3.scaleSequential(d3.interpolateGnBu));
+    // test.equal(cb.scale(), d3.scaleSequential(d3.interpolateGnBu) );
+    test.end();
 });

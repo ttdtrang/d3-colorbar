@@ -21,6 +21,8 @@
     "postpublish": "zip -j build/d3-colorbar.zip -- LICENSE README.md build/d3-colorbar.js build/d3-colorbar.min.js"
   },
   "devDependencies": {
+    "d3": "4.x",
+    "d3-scale-chromatic": "1.x",
     "rollup": "0.27",
     "tape": "4",
     "uglify-js": "2"
