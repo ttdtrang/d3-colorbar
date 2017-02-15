@@ -1,7 +1,6 @@
 # d3-colorbar
 
-YOUR DESCRIPTION HERE. Replace all instances of `colorbar` in this file with the name of your new plugin.
-
+YOUR DESCRIPTION HERE.
 ## Installing
 
 If you use NPM, `npm install d3-colorbar`. Otherwise, download the [latest release](https://github.com/d3/d3-colorbar/releases/latest).
