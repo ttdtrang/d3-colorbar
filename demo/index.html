@@ -19,14 +19,21 @@
 
     var grH = svg.append("g")
             .attr("class", "horizontal")
-            .attr("transform", "translate(50,200)");
+            .attr("transform", "translate(100,20)");
     var cbH = d3.colorbarH(colorScale,200, 20);
     grH.call(cbH);
 
-//    var grV = svg.append("g")
-//            .attr("class", "vertical")
-//            .attr("transform", "translate(0,50)");
-//    var cbV = d3.colorbarV(colorScale,20, 200);
-//    grV.call(cbV);
+    var cbH1 = d3.colorbarH(colorScale)
+
+    var grV = svg.append("g")
+            .attr("class", "vertical")
+            .attr("transform", "translate(0,20)");
+    var cbV = d3.colorbarV(colorScale,20, 200);
+    grV.call(cbV);
+
+
+    var gr1 = svg.append("g")
+            .attr("transform", "translate(100,70)")
+            .call(d3.colorbarH(colorScale, 200, 20).tickValues([-1, 0, 1]));
 </script>
 </html>
