@@ -1,14 +1,27 @@
 # d3-colorbar
 
-YOUR DESCRIPTION HERE.
+This plugin provides a quick method to generate a color bar. See a demo here .
+The color bar can be created in a similar way to that of an axis, e.g.
+
+```javascript
+var colorScale = d3.scaleSequential(d3.interpolateWarm).domain([-1,1]);
+var cb = d3.colorbarV(colorScale, 20,100);
+svg.append("g").call(cb);
+```
+
 ## Installing
 
 If you use NPM, `npm install d3-colorbar`. Otherwise, download the [latest release](https://github.com/d3/d3-colorbar/releases/latest).
 
 ## API Reference
 
-YOUR API DOCUMENTATION HERE. Use bold for symbols (such as constructor and method names) and italics for instances. See the other D3 modules for examples.
 
-<a href="#colorbar" name="colorbar">#</a> <b>colorbar</b>()
+<a href="#colorbar" name="colorbar">#</a> <b>d3.colorbarH</b>(colorScale, width, height)
+Create a horizontal color bar of size width x height that maps the given colorScale.
 
-Computes the answer to the ultimate question of life, the universe, and everything.
+<a href="#colorbar" name="colorbar">#</a> <b>d3.colorbarV</b>(colorScale, width, height)
+Create a vertical color bar of size width x height that maps the given colorScale.
+
+
+<i>colorbar</i>.<b>tickValues</b>([array])
+Set the tick values to be shown on the color bar.
