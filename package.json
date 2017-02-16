@@ -1,7 +1,7 @@
 {
   "name": "d3-colorbar",
   "version": "0.0.1",
-  "description": "{Create a color bar}",
+  "description": "{Create a color bar using d3 v4}",
   "keywords": [
     "d3",
     "d3-module"

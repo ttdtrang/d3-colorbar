@@ -1,7 +1,6 @@
 # d3-colorbar
 
-This plugin provides a quick method to generate a color bar. See a demo here .
-The color bar can be created in a similar way to that of an axis, e.g.
+This plugin provides a quick method to generate a color bar. The color bar can be created in a similar way to that of an axis, e.g.
 
 ```javascript
 var colorScale = d3.scaleSequential(d3.interpolateWarm).domain([-1,1]);
@@ -14,7 +13,6 @@ svg.append("g").call(cb);
 If you use NPM, `npm install d3-colorbar`. Otherwise, download the [latest release](https://github.com/d3/d3-colorbar/releases/latest).
 
 ## API Reference
-
 
 <a href="#colorbar" name="colorbar">#</a> <b>d3.colorbarH</b>(colorScale, width, height)
 Create a horizontal color bar of size width x height that maps the given colorScale.
