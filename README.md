@@ -14,12 +14,15 @@ If you use NPM, `npm install d3-colorbar`. Otherwise, download the [latest relea
 
 ## API Reference
 
-<a href="#colorbar" name="colorbar">#</a> <b>d3.colorbarH</b>(colorScale, width, height)
+<a href="#colorbar" name="colorbar">#</a> <b>d3.colorbarH</b>(_colorScale, width, height_)
+
 Create a horizontal color bar of size width x height that maps the given colorScale.
 
-<a href="#colorbar" name="colorbar">#</a> <b>d3.colorbarV</b>(colorScale, width, height)
+<a href="#colorbar" name="colorbar">#</a> <b>d3.colorbarV</b>(_colorScale, width, height_)
+
 Create a vertical color bar of size width x height that maps the given colorScale.
 
 
-<i>colorbar</i>.<b>tickValues</b>([array])
+<i>colorbar</i>.<b>tickValues</b>(_array_)
+
 Set the tick values to be shown on the color bar.
