@@ -13,11 +13,20 @@
 </div>
 </body>
 <script>
-    var svg = d3.select("#container");
-    var gr = svg.append("g").attr("transform", "translate(100,100)");
-    var colorScale = d3.scaleSequential(d3.interpolateRdBu).domain([-1,1]);
-    var cb = d3.colorbarH(colorScale,200, 20);
-    gr.call(cb);
+    var colorScale = d3.scaleSequential(d3.interpolateWarm).domain([-1,1]);
 
+    var svg = d3.select("#container");
+
+    var grH = svg.append("g")
+            .attr("class", "horizontal")
+            .attr("transform", "translate(50,200)");
+    var cbH = d3.colorbarH(colorScale,200, 20);
+    grH.call(cbH);
+
+//    var grV = svg.append("g")
+//            .attr("class", "vertical")
+//            .attr("transform", "translate(0,50)");
+//    var cbV = d3.colorbarV(colorScale,20, 200);
+//    grV.call(cbV);
 </script>
 </html>
