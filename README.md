@@ -1,6 +1,6 @@
 # d3-colorbar
 
-This plugin provides a quick method to generate a color bar. The color bar can be created in a similar way to that of an axis, e.g.
+This plugin provides a quick method to generate a color bar which can be created in a similar way to an axis, e.g.
 
 ```javascript
 var colorScale = d3.scaleSequential(d3.interpolateWarm).domain([-1,1]);
