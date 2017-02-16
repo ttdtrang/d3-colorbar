@@ -7,6 +7,10 @@ var colorScale = d3.scaleSequential(d3.interpolateWarm).domain([-1,1]);
 var cb = d3.colorbarV(colorScale, 20,100);
 svg.append("g").call(cb);
 ```
+Some examples
+
+![image](https://cloud.githubusercontent.com/assets/11604145/23041389/0f3d68c6-f452-11e6-8a60-63cf2e96f332.png)
+
 
 ## Installing
 
