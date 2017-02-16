@@ -17,13 +17,12 @@
 
     var svg = d3.select("#container");
 
+    svg.append("text").attr("x", 100).attr("y", 18).text("A horizontal bar [-1, 1]");
     var grH = svg.append("g")
             .attr("class", "horizontal")
             .attr("transform", "translate(100,20)");
     var cbH = d3.colorbarH(colorScale,200, 20);
     grH.call(cbH);
-
-    var cbH1 = d3.colorbarH(colorScale)
 
     var grV = svg.append("g")
             .attr("class", "vertical")
@@ -32,8 +31,32 @@
     grV.call(cbV);
 
 
+    svg.append("text").attr("x", 100).attr("y", 78).text("A horizontal bar [-10, 1]");
+    colorScale.domain([-10,1]);
     var gr1 = svg.append("g")
-            .attr("transform", "translate(100,70)")
-            .call(d3.colorbarH(colorScale, 200, 20).tickValues([-1, 0, 1]));
+            .attr("transform", "translate(100,80)")
+            .call(d3.colorbarH(colorScale, 200, 20));
+
+
+    svg.append("text").attr("x", 100).attr("y", 138).text("A horizontal bar with manual tick values");
+    colorScale.domain([-1,1]);
+    var gr2 = svg.append("g")
+            .attr("transform", "translate(100,140)")
+            .call(d3.colorbarH(colorScale, 200, 20).tickValues([-1,0,1]));
+
+    svg.append("text").attr("x", 100).attr("y", 198).text("A horizontal bar [0,5] with manual tick values");
+    colorScale.domain([0,5]);
+    var gr3 = svg.append("g")
+            .attr("transform", "translate(100,200)")
+            .call(d3.colorbarH(colorScale, 200, 20).tickValues([0, 5, 0.8, 3]));
+
+
+    svg.append("text").attr("x", 330).attr("y", 48).text("A tiny bar");
+    colorScale.domain([0,5]);
+    var gr4 = svg.append("g")
+            .attr("transform", "translate(350,60)")
+            .call(d3.colorbarV(colorScale, 5, 30).tickValues([0, 5]));
+
+
 </script>
 </html>
